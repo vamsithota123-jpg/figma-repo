@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Masai Graduates</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.login-btn {
+  color: #e74c3c;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.hero-section h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+}
+
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.form-left {
+  width: 45%;
+}
+
+.form-left h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form-left ul {
+  list-style-type: none;
+}
+
+.form-left ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.form-right {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.form-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-right form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.form-right form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-right .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-right button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.job-roles {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.job-roles h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.job-categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+  }
+
+  .form-left, .form-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Masai</div>
+    <nav>
+      <ul>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Fees</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <h1>Hire Masai graduates</h1>
+      <p>Become a part of the top companies in technology that already hired our graduates for their engineering teams.</p>
+    </section>
+
+    <section class="form-section">
+      <div class="form-left">
+        <h2>Find your best fit in our graduates</h2>
+        <ul>
+          <li>Lay down your talent requirements with us</li>
+          <li>Choose from the pool of our graduates</li>
+          <li>Review profiles and portfolios</li>
+          <li>Hire the candidate best suited for your tasks</li>
+        </ul>
+      </div>
+      <div class="form-right">
+        <h2>Learn more about hiring</h2>
+        <form>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+
+          <label for="phone">Business phone</label>
+          <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+
+          <label for="designation">Designation</label>
+          <input type="text" id="designation" name="designation" placeholder="Enter your role">
+
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Enter company name">
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="robot-check" name="robot-check">
+            <label for="robot-check">I'm not a robot</label>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="job-roles">
+      <h2>Here are some of the job roles we can assist you with</h2>
+      <div class="job-categories">
+        <div class="category">Development</div>
+        <div class="category">Design</div>
+        <div class="category">Analytics</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
